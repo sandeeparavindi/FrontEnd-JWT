@@ -46,7 +46,7 @@ function userLogin() {
         success : function (response) {
             console.log(response.data.token)
             localStorage.setItem("token",response.data.token)
-            alert("Logining successfully..!!")
+            window.location.href = "dashBoard.html"
 
         },
         error : function (error) {
